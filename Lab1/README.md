@@ -48,6 +48,11 @@ This file contains the structure we will style using CSS.
    - Use the CSS selector that can apply the style to all elements.
    - Set the `box-sizing` property so that padding and border are included in the width and height.
 ```css
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
 ```
 
 ---
@@ -55,6 +60,9 @@ This file contains the structure we will style using CSS.
 - Add the following styles to your CSS file under the previous code:
     - Set font family to Arial for better readability.
 ```css
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
 ```
 
 ---
@@ -65,6 +73,12 @@ This file contains the structure we will style using CSS.
     - Add borders as gray color solid lines to separate each section.
     - Center the text in each section.
 ```css
+header,nav,article,div,footer {
+    background-color: yellow;
+    border: 1px solid grey;
+    text-align: center;
+    padding: 10px;
+}
 ```
 
 ---
@@ -75,6 +89,24 @@ This file contains the structure we will style using CSS.
     - Assign width percentages to each remaining section: 20% for nav and div, and 60% for article. Set a height of these elements to 200px for visualization purposes.
     - Ensures the footer appears below the nav, article, and div sections.
 ```css
+header,footer {
+    width: 100%;
+}
+nav {
+    float: left;
+    width: 20%;
+    height: 200px;
+}
+article {
+    float: left;
+    width: 60%;
+    height: 200px;
+}
+div {
+    float: left;
+    width: 20%;
+    height: 200px;
+}
 ```
 
 ---
